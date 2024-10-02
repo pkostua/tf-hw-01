@@ -21,6 +21,7 @@ resource "docker_container" "nginx" {
 }
 ```
 ![image](https://github.com/user-attachments/assets/5386b3c3-bcf0-4eb7-b6f3-cd77268a6dba)
+### Применение  -auto-approve
 Вы не можете оценить изменения при использовании -auto-approve, однако эта фича необходима при автоматизации сборки/деплоя
 ![image](https://github.com/user-attachments/assets/a65ccd6c-8d49-41dd-8535-dc3b5f2e56b5)
 ![image](https://github.com/user-attachments/assets/4e9ec470-d6e9-4447-a777-3d13e9016815)
