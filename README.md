@@ -20,4 +20,5 @@ resource "docker_container" "nginx" {
   }
 }
 ```
+![image](https://github.com/user-attachments/assets/5386b3c3-bcf0-4eb7-b6f3-cd77268a6dba)
 
