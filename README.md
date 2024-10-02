@@ -27,8 +27,8 @@ resource "docker_container" "nginx" {
 ![image](https://github.com/user-attachments/assets/4e9ec470-d6e9-4447-a777-3d13e9016815)
 ## Почему образ не удалился?
 Судя по документации провайдера за удаление образа отвечают два свойства
-1. keep_locally - которое явно говорит нам о том, что образ не будет удален при destroy если оно выставлено в true. Что и сделано в нашем коде  keep_locally = true
-2. force_remove - похоже, аналог keep_locally, только наоборот, но мы его не указывали - видимо подтянулось значение по умолчанию. Пойдем в консоль и посмотри  что там установлено
+1. keep_locally -  (Boolean) If true, then the Docker image won't be deleted on destroy operation. If this is false, it will delete the image from the docker local storage on destroy. Явно говорит нам о том, что образ не будет удален при destroy если оно выставлено в true. Что и сделано в нашем коде  keep_locally = true
+2. force_remove - (Boolean) If true, then the image is removed forcibly when the resource is destroyed. Похоже, аналог keep_locally, только наоборот, но мы его не указывали - видимо подтянулось значение по умолчанию. Пойдем в консоль и посмотри  что там установлено
    ![image](https://github.com/user-attachments/assets/5c44d33c-4385-4315-9e4c-5c37b80c290e)
    Это явно не true, зачит удаление не произойдет
 
