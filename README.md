@@ -21,6 +21,7 @@ resource "docker_container" "nginx" {
 }
 ```
 Весь файл https://github.com/pkostua/tf-hw-01/blob/master/task1_main.tf
+### Результат запуска
 ![image](https://github.com/user-attachments/assets/5386b3c3-bcf0-4eb7-b6f3-cd77268a6dba)
 ### Применение  -auto-approve
 Вы не можете оценить изменения при использовании -auto-approve, однако эта фича необходима при автоматизации сборки/деплоя 
